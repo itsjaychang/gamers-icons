@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sticky_aligner {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sticky_content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.left-spin {
+  -webkit-animation: left-spin 4s linear infinite;
+  -moz-animation: left-spin 4s linear infinite;
+  animation: left-spin 4s linear infinite;
+}
+
+.right-spin {
+  -webkit-animation: right-spin 4s linear infinite;
+  -moz-animation: right-spin 4s linear infinite;
+  animation: right-spin 4s linear infinite;
+}
+
+@-moz-keyframes left-spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes left-spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes left-spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+@-moz-keyframes right-spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes right-spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes right-spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

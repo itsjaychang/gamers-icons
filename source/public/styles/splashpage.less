@@ -1,0 +1,21 @@
+@splashScrollHeight: 400vh;
+@minSplashScollHeight: 3000px;
+@minSplashHeight: 500px;
+
+#splashpage_ {
+  width: 100vw;
+  height: @splashScrollHeight;
+  position: relative;
+  min-height: @minSplashScollHeight;
+
+  & > .splash.sticky_aligner {
+    height: 100vh;
+  }
+}
+
+/* This is to set a minimum height for SplashPage */
+@media screen and ( max-height: @minSplashHeight ) {
+  .splashpage_{
+    height: @minSplashHeight !important;
+  }
+}
